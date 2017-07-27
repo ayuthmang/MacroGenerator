@@ -36,8 +36,5 @@ class MacroGenerator:
 	def sendkey(self, key, key_event = 'KeyPress'):
 		self.write_file('Keyboard : {0} : {1}'.format(key,key_event));
 
-	def init():
-		self.set_delay(macro_file,1000);
-
 	def close(self):
 		self.__fopen.close();
