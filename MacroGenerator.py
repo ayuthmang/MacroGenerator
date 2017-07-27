@@ -1,3 +1,5 @@
+import re
+
 """
 
 This script used for generating macro file (.mcr) for Macro Recorder
@@ -7,12 +9,9 @@ you can download at https://www.jitbit.com/macro-recorder/
 
 __author__ = "Ayuth Mangmesap (blackSource)"
 
-import re
-
 class MacroGenerator:
 
 	def __init__(self, target_name):
-		# super(MacroGenerator, self).__init__()
 		self.target_name = target_name;
 		self.__fopen = open(target_name,"w");
 
@@ -31,10 +30,20 @@ class MacroGenerator:
 	def set_delay(self, delay):
 		self.write_file('DELAY : {0}'.format(delay));
 
+	#
 	# keys e.g. ['Enter', 'ControlLeft', 'AltLeft', 'ShiftLeft', 'LWindows', 'NumPad1', 'F1', 'Tab']
 	# key_event: ['KeyPress', 'KeyUp', 'KeyDown']
+	#
 	def sendkey(self, key, key_event = 'KeyPress'):
 		self.write_file('Keyboard : {0} : {1}'.format(key,key_event));
 
+	#
+	# type text with keyboard
+	# {#crlf#} = new line (but doesnt mean it press 'Enter' key)
+	#
+	def typetext(self, text):
+		self.write_file('TYPE TEXT : {0}'.format(re.sub(r'\n', '{#crlf#}', text)))
+
+	# close a file
 	def close(self):
 		self.__fopen.close();
