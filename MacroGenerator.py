@@ -31,8 +31,10 @@ class MacroGenerator:
 	def set_delay(self, delay):
 		self.write_file('DELAY : {0}'.format(delay));
 
-	def sendkey(self, key):
-		self.write_file('Keyboard : {0} : KeyPress'.format(key));
+	# keys e.g. ['Enter', 'ControlLeft', 'AltLeft', 'ShiftLeft', 'LWindows', 'NumPad1', 'F1', 'Tab']
+	# key_event: ['KeyPress', 'KeyUp', 'KeyDown']
+	def sendkey(self, key, key_event = 'KeyPress'):
+		self.write_file('Keyboard : {0} : {1}'.format(key,key_event));
 
 	def init():
 		self.set_delay(macro_file,1000);
