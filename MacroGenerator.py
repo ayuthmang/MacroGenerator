@@ -44,6 +44,9 @@ class MacroGenerator:
 	def typetext(self, text):
 		self.write_file('TYPE TEXT : {0}'.format(re.sub(r'\n', '{#crlf#}', text)))
 
+	def mouse_click():
+		self.write_file('Mouse : 0 : 0 : Click : 0 : 1 : 0');
+
 	# close a file
 	def close(self):
 		self.__fopen.close();
