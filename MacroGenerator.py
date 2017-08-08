@@ -49,7 +49,7 @@ class MacroGenerator:
 	mouse_event: ['Click', 'RightClick']
 
 	"""
-	def mouse_click(mouse_event = 'Click'):
+	def mouse_click(self, mouse_event = 'Click'):
 		self.write_file('Mouse : 0 : 0 : {0} : 0 : 1 : 0'.format(mouse_event));
 
 	# close a file
