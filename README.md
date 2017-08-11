@@ -1,5 +1,4 @@
 # What is __MacroGenerater__
-----------------------------
 
 MacroGenerator is a python script - for people who want to create a bot for boundary testing or build a little macro scripts.
 
