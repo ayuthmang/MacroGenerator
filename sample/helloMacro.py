@@ -26,7 +26,7 @@ def generate():
 	mcr_file.set_delay(1000);
 
 	# type notepad and new line
-	mcr_file.typetext('notepad\n\n\n\nThis is from MacroGenerater');
+	mcr_file.typetext('notepad\n\n\n\nThis is from MacroGenerator');
 	mcr_file.set_delay(2000);
 
 	# press Alt + F4 key
