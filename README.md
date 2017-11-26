@@ -16,6 +16,11 @@ from MacroGenerator import MacroGenerator
 ## Functions
 
 ```python
+
+# the constructor
+# name = file name that you want to created
+def __init__(self, target_name):
+
 def write_file(self, command): # write a content in a file line by line
 
 def paste_clipboard(self): # insert ctrl + v (paste) in our macro file
