@@ -12,8 +12,20 @@ Python 2.6.4 or newer is recommended.
 ```python
 from MacroGenerator import MacroGenerator
 ```
-## Building Script
 
+## Functions
+
+```python
+def write_file(self, command): # write a content in a file line by line
+
+def paste_clipboard(self): # insert ctrl + v (paste) in our macro file
+
+def set_clipboard(self, text): # set clipboard with argument text string
+
+def set_delay(self, delay): # wait for x millisecconds, e.g. 1000 = 1 seccond
+```
+
+## Building Script
 
 ### Python
 
