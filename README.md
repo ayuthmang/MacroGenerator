@@ -1,11 +1,13 @@
-# What is __MacroGenerater__
+# What is __MacroGenerator__
 
-MacroGenerator is a python script - for people who want to create a bot for boundary testing or build a little macro scripts.
+MacroGenerator is a python script - for people who want to create a bot for automate testing or build a little macro scripts.
 
+## Prerequisit
 
-## Script's Require
+1. (Macro Recorder](https://www.jitbit.com/macro-recorder/)
+2. Python 2.6.4 or newer is recommended
 
-Python 2.6.4 or newer is recommended.
+# Using MacroGenerator
 
 ## Import Script
 
